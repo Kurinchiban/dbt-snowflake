@@ -1,0 +1,37 @@
+version: 2
+
+models: 
+  - name: subject_wise_topper_report
+    columns:
+      - name: name
+        tests: 
+          - not_null
+          # - not_empty_string
+      - name: email
+        tests: 
+          - not_null
+          # - not_empty_string
+      - name: phone
+        tests:
+          - not_null
+          # - not_empty_string
+      - name: address
+        tests: 
+          - not_null
+          # - not_empty_string
+      - name: studentId
+        tests:
+          - unique
+          - not_null
+      - name: mathsMarks
+        tests:
+          - not_null
+      - name: englishMarks
+        tests: 
+          - not_null
+      - name: socialMarks
+        tests:
+          - not_null
+      - name: totalMarks
+        tests:
+          - not_null
