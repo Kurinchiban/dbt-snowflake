@@ -1,0 +1,5 @@
+SELECT 
+    GEOGRAPHY,
+    ROUND(AVG(BALANCE),2) AS AVERAGE_BALANCE
+FROM {{ ref('src_credit_card_listing') }}
+GROUP BY GEOGRAPHY

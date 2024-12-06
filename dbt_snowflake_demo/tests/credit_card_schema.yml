@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: credit_card_incremental_listing
+    columns:
+      - name: ROWNUMBER
+        tests:
+          -   
+          - not_null
+      - name: CUSTOMERID
+        tests:
+          - unique
+          - not_null
+      - name: SURNAME
+        tests:
+          - not_null
+      - name: EXITED
+        tests:
+          - not_null
+          - accepted_values:
+              values:
+                - 1
+                - 0
