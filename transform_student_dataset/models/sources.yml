@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: student
+    description: "The student personal and academic information"
+    schema: public
+    tables: 
+      - name: students_info
+        description: "Table containing personal details of students"
+
+      - name: students_marks
+        description: "Table containing academic marks of students"
