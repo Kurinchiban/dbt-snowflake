@@ -3,7 +3,7 @@
     with invalid_rows as (
         select *
         from {{ model }}
-        where {{ column_name }} = ""
+        where {{ column_name }} = ''
     )
     select *
     from invalid_rows
