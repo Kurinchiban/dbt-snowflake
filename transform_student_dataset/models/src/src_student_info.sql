@@ -6,7 +6,7 @@ with student_info as (
     phone,
     address,
     from
-    student.public.students_info
+    {{ source('student', 'students_info') }}
 )
 
 select * from student_info

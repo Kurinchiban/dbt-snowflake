@@ -7,7 +7,7 @@ with student_marks as (
     socialMarks,
     totalMarks
     from
-    student.public.students_marks
+    {{ source('student', 'students_marks') }}
 )
 
 select * from student_marks

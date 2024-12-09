@@ -6,19 +6,19 @@ models:
       - name: name
         tests: 
           - not_null
-          # - not_empty_string
+          - not_empty_string
       - name: email
         tests: 
           - not_null
-          # - not_empty_string
+          - not_empty_string
       - name: phone
         tests:
           - not_null
-          # - not_empty_string
+          - not_empty_string
       - name: address
         tests: 
           - not_null
-          # - not_empty_string
+          - not_empty_string
       - name: studentId
         tests:
           - unique
@@ -27,7 +27,7 @@ models:
         tests:
           - not_null
       - name: englishMarks
-        tests: 
+        tests:    
           - not_null
       - name: socialMarks
         tests:
